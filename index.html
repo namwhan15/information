@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP ::</title>
+</head>
+<body>
+    <h2>My SHOP:</h2>
+    <h4>ข้อมูลสินค้า:</h4>
+    <!-- ข้อมูลสินค้า -->
+    <button type="button" onclick="loadXMLDoc()">ข้อมูลสินค้า</button>
+    <table border="1">
+        <tr>
+            
+            <td style="background-color: gold;">ID</td>
+            <td>product</td>
+            <td>detail</td>
+            <td>price</td>
+            <td>amount</td>
+        </tr>
+        <tr>
+            <td id="demo1"></td>
+            <td id="demo2"></td>
+            <td id="demo3"></td>
+            <td id="demo4"></td>
+            <td id="demo5"></td>
+            
+        </tr>
+    </table>
+    <p></p>
+
+    <h4>ข้อมูลลูกค้า</h4>
+    <!-- ข้อมูลลูกค้า -->
+    <button type="button" onclick="loadXMLDoc1()">ข้อมูลลูกค้า</button>
+    <table border="1">
+        <tr>
+            <td style="background-color: gold;">ID</td>
+            <td>name</td>
+            <td>lastname</td>
+            <td>gender</td>
+            <td>age</td>
+        </tr>
+        <tr>
+            <td id="po1"></td>
+            <td id="po2"></td>
+            <td id="po3"></td>
+            <td id="po4"></td>
+            <td id="po5"></td>
+        </tr>
+    </table>
+    <p></p>
+
+    <h4>ข้อมูลการสั่งซื้อ:</h4>
+    <!-- ข้อมูลการสั่งซื้อ -->
+
+    <button type="button" onclick="loadXMLDoc2()">ข้อมูลการสั่งซื้อ</button>
+    <table border="1">
+        <tr>
+            <td style="background-color: gold;">ID</td>
+            <td>name</td>
+            <td>product</td>
+            <td>amount</td>
+            <td>time</td>
+        </tr>
+        <tr>
+            <td id="em1"></td>
+            <td id="em2"></td>
+            <td id="em3"></td>
+            <td id="em4"></td>
+            <td id="em5"></td>
+        </tr>
+    </table>
+    <p></p>
+
+    <h4>ข้อมูลการจัดส่ง:</h4>
+    <!-- ข้อมูลการจัดส่ง -->
+    <button type="button" onclick="loadXMLDoc3()">ข้อมูลการจัดส่ง</button>
+    <table border="1">
+        <tr>
+            <td style="background-color: gold;">ID</td>
+            <td>name</td>
+            <td>product</td>
+            <td>company</td>
+            <td>deliveryround</td>
+        </tr>
+        <tr>
+            <td id="buy1"></td>
+            <td id="buy2"></td>
+            <td id="buy3"></td>
+            <td id="buy4"></td>
+            <td id="buy5"></td>
+        </tr>
+    </table>
+
+
+    <script src="shop.js"></script>
+</body>
+</html>

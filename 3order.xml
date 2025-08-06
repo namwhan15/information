@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE it-order [
+    <!ELEMENT it-order (orders*)>
+    <!ELEMENT orders (ID, name, product, amount, time, delivery-round)>
+    
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT product (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT time (#PCDATA)>
+    <!ELEMENT delivery-round (#PCDATA)>
+
+    <!ENTITY morning "รอบเช้า">
+    <!ENTITY noon "รอบบ่าย">
+    <!ENTITY night "รอบเย็น">
+]>
+
+<it-order>
+    <orders>
+        <ID>001</ID>
+        <name>รีรณา สุขดี</name>
+        <product>คอมพิวเตอร์ตั้งโต๊ะ Dell OptiPlex</product>
+        <amount>10 ชิ้น</amount>
+        <time>08:15 น.</time>
+        <delivery-round>&morning;</delivery-round>
+    </orders>
+    <orders>
+        <ID>002</ID>
+        <name>ขวัญใจ จันทร์ลอย</name>
+        <product>WD External HDD 1TB</product>
+        <amount>15 ชิ้น</amount>
+        <time>13:45 น.</time>
+        <delivery-round>&noon;</delivery-round>
+    </orders>
+    <orders>
+        <ID>003</ID>
+        <name>นรินทร ใจกว้า</name>
+        <product>SanDisk Flash Drive 64GB</product>
+        <amount>2 ชิ้น</amount>
+        <time>19:10 น.</time>
+        <delivery-round>&night;</delivery-round>
+    </orders>
+    <orders>
+        <ID>004</ID>
+        <name>ขวัญ ศักดิ์ศรี</name>
+        <product>Kingston SSD 240GB</product>
+        <amount>1 ชิ้น</amount>
+        <time>09:50 น.</time>
+        <delivery-round>&morning;</delivery-round>
+    </orders>
+    <orders>
+        <ID>3005</ID>
+        <name>เอก ภักดี</name>
+        <product>TOTOLINK Wi-Fi USB Adapter</product>
+        <amount>1 ชิ้น</amount>
+        <time>15:30 น.</time>
+        <delivery-round>&noon;</delivery-round>
+    </orders>
+</it-order>

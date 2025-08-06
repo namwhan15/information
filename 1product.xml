@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE it-product [
+    <!ELEMENT it-product (products)>
+    <!ELEMENT products (ID, product, detail, price, amount, category)>
+    
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT product (#PCDATA)>
+    <!ELEMENT detail (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+
+    <!ENTITY storage "อุปกรณ์เก็บข้อมูล">
+    <!ENTITY peripheral "อุปกรณ์ต่อพ่วงคอมพิวเตอร์">
+    <!ENTITY network "อุปกรณ์เครือข่าย">
+]>
+
+<it-product>
+    <products>
+        <ID>001</ID>
+        <product>คอมพิวเตอร์ตั้งโต๊ะ Dell OptiPlex</product>
+        <detail>CPU i5, RAM 8GB, SSD 256GB</detail>
+        <price>18,500 บาท</price>
+        <amount>10 ชิ้น</amount>
+        <category>&storage;</category>
+    </products>
+    <products>
+        <ID>002</ID>
+        <product>WD External HDD 1TB</product>
+        <detail>ฮาร์ดดิสก์พกพา USB 3.0 ขนาด 1TB</detail>
+        <price>1,590 บาท</price>
+        <amount>15 ชิ้น</amount>
+        <category>&storage;</category>
+    </products>
+    <products>
+        <ID>003</ID>
+        <product>SanDisk Flash Drive 64GB</product>
+        <detail>แฟลชไดรฟ์ USB 3.1 ความเร็วสูง</detail>
+        <price>320 บาท</price>
+        <amount>5 ชิ้น</amount>
+        <category>&storage;</category>
+    </products>
+    <products>
+        <ID>004</ID>
+        <product>โน้ตบุ๊ก HP Pavilion 15</product>
+        <detail>Ryzen 5, RAM 16GB, SSD 512GB</detail>
+        <price>22,900 บาท</price>
+        <amount>25 ชิ้น</amount>
+        <category>&peripheral;</category>
+    </products>
+    <products>
+        <ID>005</ID>
+        <product>Microsoft Wired Keyboard 600</product>
+        <detail>คีย์บอร์ดมีสาย USB พร้อมปุ่มลัดมัลติมีเดีย</detail>
+        <price>390 บาท</price>
+        <amount>30 ชิ้น</amount>
+        <category>&peripheral;</category>
+    </products>
+</it-product>

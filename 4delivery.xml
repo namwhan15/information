@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE it-delivery [     
+    <!ELEMENT it-delivery (deliverys*)>     
+    <!ELEMENT deliverys (ID, name, product, company, delivery-round, status)>          
+
+    <!ELEMENT ID (#PCDATA)>     
+    <!ELEMENT name (#PCDATA)>     
+    <!ELEMENT product (#PCDATA)>     
+    <!ELEMENT company (#PCDATA)>     
+    <!ELEMENT delivery-round (#PCDATA)>     
+    <!ELEMENT status (#PCDATA)>      
+
+    <!ENTITY not "ยังไม่จัดส่ง">     
+    <!ENTITY shipping "กำลังจัดส่ง">     
+    <!ENTITY completed "จัดส่งเรียบร้อย"> 
+]>
+
+<it-delivery>
+    <deliverys>
+        <ID>001</ID>
+        <name>รีรณา สุขดี</name>
+        <product>คอมพิวเตอร์ตั้งโต๊ะ Dell OptiPlex</product>
+        <company>ไปรษณีย์ไทย</company>
+        <deliveryround>รอบเช้า</deliveryround>
+        <status>&shipping;</status>
+    </deliverys>
+    <deliverys>
+        <ID>002</ID>
+        <name>ขวัญใจจันทร์ลอย</name>
+        <product>WD External HDD 1TB</product>
+        <company>Flash Express</company>
+        <deliveryround>รอบบ่าย</deliveryround>
+        <status>&shipping;</status>
+    </deliverys>
+    <deliverys>
+        <ID>003</ID>
+        <name>นรินทร ใจกว้า</name>
+        <product>SanDisk Flash Drive 64GB</product>
+        <company>Shopee Express</company>
+        <deliveryround>รอบเย็น</deliveryround>
+        <status>&completed;</status>
+    </deliverys>
+    <deliverys>
+        <ID>004</ID>
+        <name>ขวัญ ศักดิ์ศรี</name>
+        <product>Kingston SSD 240GB</product>
+        <company>ไปรษณีย์ไทย</company>
+        <deliveryround>รอบเช้า</deliveryround>
+        <status>&not;</status>
+    </deliverys>
+    <deliverys>
+        <ID>005</ID>
+        <name>เอก ภักดี</name>
+        <product>TOTOLINK Wi-Fi USB Adapter</product>
+        <company>Flash Express</company>
+        <deliveryround>รอบบ่าย</deliveryround>
+        <status>&shipping;</status>
+    </deliverys>
+</it-delivery>

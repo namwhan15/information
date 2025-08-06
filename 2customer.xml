@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE it-customer [
+    <!ELEMENT it-customer (customers)>
+    <!ELEMENT customers (ID, name, lastname, gender, age, category)>
+    
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT lastname (#PCDATA)>
+    <!ELEMENT gender (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+
+    <!ENTITY personal "บุคคลทั่วไป">
+    <!ENTITY corp "บริษัท">
+    <!ENTITY vip "VIP">
+]>
+
+<it-customer>
+    <customers>
+        <ID>001</ID>
+        <name>รีรณา</name>
+        <lastname>สุขดี</lastname>
+        <gender>หญิง</gender>
+        <age>35 ปี</age>
+        <category>&personal;</category>
+    </customers>
+    <customers>
+        <ID>002</ID>
+        <name>ขวัญใจ</name>
+        <lastname>จันทร์ลอย</lastname>
+        <gender>หญิง</gender>
+        <age>25 ปี</age>
+        <category>&personal;</category>
+    </customers>
+    <customers>
+        <ID>003</ID>
+        <name>นรินทร</name>
+        <lastname>ใจกว้า</lastname>
+        <gender>หญิง</gender>
+        <age>23 ปี</age>
+        <category>&vip;</category>
+    </customers>
+    <customers>
+        <ID>004</ID>
+        <name>สมใจ</name>
+        <lastname>ศรีเมืองเอก</lastname>
+        <gender>ชาย</gender>
+        <age>37 ปี</age>
+        <category>&personal;</category>
+    </customers>
+    <customers>
+        <ID>005</ID>
+        <name>อเนก</name>
+        <lastname>เหล่าดี</lastname>
+        <gender>ชาย</gender>
+        <age>32 ปี</age>
+        <category>&corp;</category>
+    </customers>
+</it-customer>
